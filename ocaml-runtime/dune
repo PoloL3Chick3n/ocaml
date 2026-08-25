@@ -1,0 +1,10 @@
+(executable
+ (name ocaml_repl)
+ (modes byte js)
+ (libraries js_of_ocaml js_of_ocaml-toplevel)
+ (link_flags
+  (:standard -linkall))
+ (js_of_ocaml
+  (compilation_mode whole_program)
+  (flags
+   (:standard --toplevel))))

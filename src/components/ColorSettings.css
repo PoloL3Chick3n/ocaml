@@ -1,0 +1,123 @@
+.color-popover {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 280px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 88px);
+  overflow-y: auto;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 20;
+}
+
+.popover-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.popover-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+}
+
+.radio-row {
+  display: flex;
+  gap: 14px;
+}
+
+.radio-col {
+  flex-direction: column;
+  gap: 6px;
+}
+
+.radio-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.radio-option input {
+  accent-color: var(--color-navy);
+  margin: 0;
+}
+
+.swatch-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.swatch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 0;
+  cursor: pointer;
+}
+
+.swatch-name {
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.swatch-input {
+  width: 26px;
+  height: 22px;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: none;
+  cursor: pointer;
+}
+
+.swatch-input::-webkit-color-swatch-wrapper {
+  padding: 2px;
+}
+
+.swatch-input::-webkit-color-swatch {
+  border: none;
+  border-radius: 2px;
+}
+
+.bold-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-text);
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.bold-option input {
+  accent-color: var(--color-navy);
+  margin: 0;
+}
+
+.reset-colors {
+  align-self: flex-start;
+  padding-left: 0;
+}
+
+@media (max-width: 520px) {
+  .color-popover {
+    position: fixed;
+    top: 60px;
+    left: 16px;
+    right: 16px;
+    width: auto;
+  }
+}

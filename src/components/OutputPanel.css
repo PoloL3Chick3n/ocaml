@@ -1,0 +1,84 @@
+.output-header {
+  justify-content: space-between;
+}
+
+.output-tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.tab {
+  border: none;
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tab-active {
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.tab-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-error);
+}
+
+.text-action {
+  border: none;
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: var(--radius-sm);
+}
+
+.text-action:hover:not(:disabled) {
+  color: var(--color-text);
+}
+
+.text-action:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.output-body {
+  padding: 16px;
+  background: var(--color-surface);
+  overflow: auto;
+}
+
+.output-text {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--color-text);
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.output-error {
+  color: var(--color-error);
+}
+
+/* Valeurs imprimées par le toplevel (val x : int = 10), distinctes de la
+   sortie du programme mais sans surcharger l'écran. */
+.output-value {
+  color: var(--color-text-muted);
+}
+
+.output-placeholder {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin: 0;
+}
