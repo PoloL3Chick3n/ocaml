@@ -34,7 +34,32 @@ export function Header({
 
   return (
     <header className="header">
-      <div className="header-title">OCaml Playground</div>
+      <div className="header-title">
+        <svg
+          className="header-logo"
+          width="22"
+          height="22"
+          viewBox="0 0 64 64"
+          aria-hidden="true"
+        >
+          <circle cx="20" cy="20" r="9" fill="currentColor" />
+          <circle cx="34" cy="17" r="9" fill="currentColor" />
+          <ellipse cx="27" cy="36" rx="17" ry="11" fill="currentColor" />
+          <path d="M40 32 L52 14 L58 16 L48 38 Z" fill="currentColor" />
+          <circle cx="55" cy="15" r="6" fill="currentColor" />
+          <path d="M52 10 L56 8 L57 12 Z" fill="currentColor" />
+          <rect x="16" y="44" width="5" height="16" rx="2" fill="currentColor" />
+          <rect x="34" y="44" width="5" height="16" rx="2" fill="currentColor" />
+          <path
+            d="M11 32 Q6 38 10 46"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            fill="none"
+            strokeLinecap="round"
+          />
+        </svg>
+        OCaml Playground
+      </div>
       <div className="header-actions">
         <div className="header-settings">
           <button
